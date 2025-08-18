@@ -1,0 +1,374 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* スマホでは縦並びに変更 */
+  }
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    color: rgb(67, 23, 4);
+   
+}
+
+.symbolmark img{
+    height: 80px;
+    width: 80px;
+}
+
+.logo{
+    margin: 0 30px;
+    color: rgb(67, 23, 4);
+    
+}
+
+.menu-group{
+    margin: 0;
+    padding: 0 30px 0 0;
+}
+
+.menu-item a{
+    color: rgb(67, 23, 4);
+    text-decoration: none;
+}
+
+.menu-item{
+    
+    color: rgb(67, 23, 4);
+    list-style: none;
+    padding: 10px;
+    display: inline;
+    margin: 0 20px;
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.copy{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 60px;
+    color: white;
+    text-align: left;
+    line-height: 1.4;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.copy span{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.main-bg{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+.main-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.works-section{
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.works-section h1{
+    margin: 0;
+    padding: 60px;
+    font-family: "Nata Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: rgb(67, 23, 4);
+}
+
+.works-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.works-item {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.works-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.works-item:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.works-item:hover img{
+    transform: scale(1.1);
+}
+
+.works-item h2{
+    font-family: "Nata Sans", sans-serif;
+    font-weight: 700;
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    color: rgb(67, 23, 4);
+}
+
+.ORIGINAL{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+}
+
+.CLIENT{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+}
+
+.web{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+}
+
+.pop{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+}
+
+.wave-section{
+    position: relative;
+}
+
+.service-section{
+    position: relative;
+    line-height: 0;
+}
+
+.wave{
+    display: block;
+    width: 100%;
+    height: 120px;
+}
+
+.service-body{
+   margin-top: 0;
+   background:rgb(235, 136, 60);
+   padding: 60px 20px 100px;
+   line-height: 1.6;
+}
+
+.service-title {
+  font-family: "Nata Sans", sans-serif;
+  margin: 0 0 30px;
+  font-weight: 700;
+  color: white;
+  font-style: normal;
+  text-align: center;
+  font-size: 50px; 
+}
+
+.number-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.number-title .number,
+.number-title .title{
+    font-family: "Nata Sans", sans-serif;
+    margin: 50px 0;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+}
+
+.service-body img{
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.service-body .text{
+    text-align: center;
+    margin: 0 0 200px 0;
+}
+
+.wave-bottom{
+    margin-top: -1px;
+    transform: rotate(180deg);
+    display: block;
+    width: 100%;
+    height: 120px;
+}
+
+.about h1{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+    text-align: center;
+    font-size: 50px;
+}
+
+.about img{
+    width: 450px;
+    height: auto;
+}
+
+.about-left{
+    position: relative;
+}
+
+.skill-title{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+    font-size: 24px;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgb(71, 86, 202);
+}
+
+.contact-section h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    color:white;
+}
+
+.contact-section form {
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-section p {
+    margin-bottom: 50px;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color:white;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-section button {
+    width: 100%;
+    padding: 12px;
+    background: rgb(239, 136, 57);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 200px;
+}
+
+.contact-section button:hover {
+    background: rgb(50, 206, 120);
+}
+
+.back-to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(67, 23, 4);
+    font-family: "Nata Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.back-to-top .top-icon{
+    display: block;
+    width: 100px;
+}
+
+.back-to-top span{
+    display: block;
+}
