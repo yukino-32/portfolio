@@ -10,7 +10,7 @@ header{
     justify-content: space-between;
     width: 100%;
     height: 100px;
-    padding: 0 20px;
+    margin: 10px 20px;
 }
 
 .header-left{
@@ -18,20 +18,14 @@ header{
     align-items: center;
 }
 
-.title{
-    color: rgb(67, 23, 4);
-   
-}
-
 .symbolmark img{
     height: 80px;
     width: 80px;
 }
 
-.logo{
+.logo img{
     margin: 0 30px;
-    color: rgb(67, 23, 4);
-    
+    width: 230px;
 }
 
 .menu-group{
@@ -64,7 +58,7 @@ header{
     color: white;
     text-align: left;
     line-height: 1.4;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    text-shadow: 3px 3px 6px rgb(67, 23, 4);
     font-family: "Kaisei Tokumin", serif;
     font-weight: 700;
     font-style: normal;
@@ -249,37 +243,29 @@ header{
     margin-bottom: 20px;
 }
 
-.about-left{
+.profile {
     flex: 1;
     text-align: center;
 }
 
-.about-left li{
+.profile .name{
+    margin-bottom: 30px;
     font-family: "Nata Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     color: rgb(67, 23, 4);
-    font-size: 24px;
+    font-size: 28px;
 }
 
-.skill{
+.profile h2{
     margin-bottom: 30px;
     font-family: "Nata Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     color: rgb(67, 23, 4);
-    text-align: center;
     font-size: 32px;
-}
-
-.skill-list{
-    list-style: disc;
-    text-align: left;
-    display: inline-block;
-    padding-left: 20px;
-    margin: 0 auto;
 }
 
 .about-right{
@@ -287,7 +273,26 @@ header{
     text-align: left;
 }
 
-.about-right li{
+.about-right h2{
+    margin-bottom: 30px;
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+    text-align: left;
+    font-size: 32px;
+}
+
+.skill-list,.career-list{
+    list-style: disc;
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+.skill-list li,.career-list li{
     font-family: "Nata Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -295,21 +300,14 @@ header{
     font-size: 24px;
 }
 
-.career{
-    font-family: "Nata Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    color: rgb(67, 23, 4);
-    text-align: center;
-    font-size: 32px;   
-    text-align: left; 
+.skill-list li{
+    margin-bottom: 20px;
 }
 
-.career-list li {
-   position: relative;
-   margin-bottom: 30px;
-   padding-left: 15px;
+.career-list li{
+    margin-bottom: 35px;
 }
+
 
 /* ここからcontact */
 
@@ -347,13 +345,12 @@ header{
 
 .contact-section p {
     margin-bottom: 50px;
-}
-
-.contact-section label {
     display: block;
-    margin-bottom: 6px;
     font-weight: bold;
     color:white;
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
 }
 
 .contact-section input,
@@ -522,12 +519,12 @@ header{
         padding: 0 20px;
     }
 
-    .about-left, .about-right {
+    .about-left{
         text-align: center;
         width: 100%;
     }
 
-    .about-left img {
+    .about img {
         width: 120%;
         max-width: auto;
         display: block;
@@ -535,8 +532,20 @@ header{
         margin: 0 auto;
     }
 
+    .about-contener h2{
+        padding-left: 1.2em;
+    }
+
     .about ul{
         margin-bottom: 60px;
+    }
+    
+    .profile .name{
+        font-size: 20px;
+    }
+
+    .profile .about-me{
+        font-size: 15px;
     }
 
     .skill-list{
@@ -545,16 +554,16 @@ header{
         text-align: center;
     }
 
-    .skill, .career {
+    .about h2 {
         font-size: 20px;
-        text-align: center;
+        text-align: left;
     }
 
     .skill-list li{
         position: relative;
         padding-left: 1.2em;
         text-align: left;
-        display: inline-block;
+        display: block;
     }
 
     .skill-list li::before{
@@ -567,15 +576,8 @@ header{
         margin-bottom: 8px;
     }
 
-    .about-left li{
-        display: list-item;
-        font-size: 16px;
-        margin: 0 30px;
-    }
-
     .about-right li {
         font-size: 16px;
-        display: list-item;
     }
 
     .career-list {
