@@ -432,6 +432,7 @@ header{
     .nav .menu-group {
         text-align: center;
         font-size: 20px;
+        margin-right: 20px;
     }
 
     .menu-item {
@@ -528,7 +529,7 @@ header{
     }
 
     .about-contener p {
-        font-size: 15px;   /* 小さめ文字 */
+        font-size: 16px;   /* 小さめ文字 */
         line-height: 1.6;  /* 行間広げる */
     }
 
@@ -569,7 +570,7 @@ header{
 
     .career-list li,
     .skill-list li {
-        font-size: 15px;
+        font-size: 17px;
         line-height: 1.6;
     }
 }
