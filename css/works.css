@@ -50,12 +50,44 @@ header{
 }
 
 .works-item{
-   padding: 60px;
+   padding: 10%;
 }
 
-.works-item img{
+.outdoor img{
     width: 100%;
-    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.remon img{
+    width: 60%;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.A1POP img{
+    padding: 30px 0;
+    width: 65%;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.rain img{
+    width: 60%;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.magmabanner img{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
 }
 
 .works-item h2{
@@ -73,6 +105,7 @@ header{
     font-style: normal;
     color: rgb(67, 23, 4);
 }
+
 
 /* TOPに戻る */
 .back-to-top{
@@ -123,5 +156,58 @@ header{
     .menu-item {
         display: block;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .works-item{
+        padding: 10%;
+    }
+
+    .outdoor img{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .remon img{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .A1POP img{
+        padding: 30px 0;
+        width: 80%;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .rain img{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .magmabanner img{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 0 30px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-to-top .top-icon {
+        width: 70px;
+    }
+
+    .back-to-top {
+        font-size: 20px;
     }
 }
