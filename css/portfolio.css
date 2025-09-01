@@ -155,6 +155,8 @@ header{
     color: rgb(67, 23, 4);
 }
 
+
+
 .service-section{
     position: relative;
     line-height: 0;
@@ -168,7 +170,7 @@ header{
 
 .service-body{
    margin-top: 0;
-   background:rgb(235, 136, 60);
+   background:rgb(250, 146, 67);
    padding: 60px 20px 1px;
    line-height: 1.6;
 }
@@ -207,8 +209,16 @@ header{
 }
 
 .service-body .text{
-    text-align: center;
-    margin: 0 0 200px 0;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    color: rgb(67, 23, 4);
+    font-size: 18px;
+    text-align: left;
+    padding: 0 30px 80px 30px;
 }
 
 .wave-bottom{
@@ -243,7 +253,16 @@ header{
 }
 
 .about-me{
-    margin-bottom: 80px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    color: rgb(67, 23, 4);
+    font-size: 18px;
+    text-align: left;
+    padding: 50px 30px 80px 30px;
 }
 
 .profile {
@@ -305,7 +324,7 @@ header{
     font-optical-sizing: auto;
     font-weight: 300;
     color: rgb(67, 23, 4);
-    font-size: 21px;
+    font-size: 18px;
     text-align: left;
 }
 
@@ -375,7 +394,7 @@ header{
 .contact-section button {
     width: 100%;
     padding: 12px;
-    background: rgb(239, 136, 57);
+    background: rgb(250, 146, 67);
     color: white;
     border: none;
     border-radius: 3px;
