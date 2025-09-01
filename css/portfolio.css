@@ -216,9 +216,13 @@ header{
     font-optical-sizing: auto;
     font-weight: 300;
     color: rgb(67, 23, 4);
-    font-size: 18px;
+    font-size: 19px;
     text-align: left;
-    padding: 0 30px 80px 30px;
+    padding: 50px 50px;
+    margin-bottom: 220px;
+    background: rgba(255, 255, 255, 0.3); /* 半透明にするのがポイント */
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
 }
 
 .wave-bottom{
