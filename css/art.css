@@ -49,7 +49,13 @@ header{
     font-style: normal;
 }
 
-
+.art img{
+    display: inline-block;
+    height: auto;
+    width: 350px;
+    margin: 50px;
+    text-align: center;
+}
 
 /* TOPに戻る */
 .back-to-top{
